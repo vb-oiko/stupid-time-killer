@@ -17,7 +17,7 @@ const HomeView = () => {
         <form method="POST" action={"/"}>
           <article className="form">
             <div className="field">
-              <label>🧨 Choose your self-destruction duration"</label>
+              <label>🧨 Choose your self-destruction duration</label>
               <select
                 className="stSelectbox"
                 name="duration"
