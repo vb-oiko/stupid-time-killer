@@ -2,8 +2,9 @@ body {
   background: linear-gradient(135deg, #ff00cc, #33ff00, #ffff00, #ff0066);
   background-size: 600% 600%;
   animation: gradientShift 10s ease infinite;
-  font-size: 32px;
+  font-size: 28px;
   font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
 }
 
 @keyframes gradientShift {
@@ -32,8 +33,9 @@ body {
   transform: rotate(-1.5deg);
   box-shadow: 0 0 10px #000;
   width: 100%;
-  font-size: 32px;
+  font-size: 28px;
 }
+
 .stButton {
   margin: auto;
 }
@@ -46,7 +48,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 0 20px #ff00ff;
   animation: wiggle 0.3s ease-in-out infinite;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 @keyframes wiggle {
@@ -76,10 +78,11 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 800px;
+  font-size: 28px;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .form {
@@ -109,4 +112,25 @@ ul {
   box-shadow: 0 0 20px #ff00ff;
   padding: 1rem;
   list-style: none;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 20px;
+  }
+
+  .stTextInput,
+  .stSelectbox {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .stButton > button {
+    font-size: 20px;
+  }
 }
